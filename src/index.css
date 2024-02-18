@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 html {
-  font-family: 'SF Pro Display',
-    sans-serif;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+a:focus {
+    outline: none;
 }
