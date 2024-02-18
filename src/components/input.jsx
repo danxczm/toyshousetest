@@ -31,15 +31,10 @@ const Input = ({ type, placeholder, text = false, pattern = null, last = false, 
         if (type === 'email') {
             const value = e.target.value;
             const pattern = /[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g;
+            const isValid = pattern.test(value);
 
-            if (!pattern.test(value)) {
-                setRedBorder(true);
-                setIsValid(false);
-            }
-            if (pattern.test(value)) {
-                setRedBorder(false);
-                setIsValid(true);
-            }
+            setRedBorder(!isValid);
+            setIsValid(isValid);
         }
     };
 
