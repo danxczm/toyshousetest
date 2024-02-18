@@ -2,12 +2,14 @@ import burger from '../public/ic_menu_48px.png';
 import logo from '../public/Group.png';
 import hero from '../public/heropic.png';
 
+import Button from './button';
+
 const Hero = () => {
   return (
     <section className='pt-10 px-[15px] min-h-[768px] bg-gradient-to-t from-[#98C3E8]/20 via-[#98C3E800] to-[#98C3E800] md:px-10'>
       <div className='max-w-[1140px] mx-auto'>
         <nav className='flex items-center justify-between mb-[52px] md:mb-[64px]'>
-          <div className='w-12 h-12 flex justify-center items-center'>
+          <div className='flex items-center justify-center w-12 h-12'>
             <a href='/'>
               <img
                 src={logo}
@@ -16,7 +18,7 @@ const Hero = () => {
               />
             </a>
           </div>
-          <div className='w-8 h-8 flex justify-center items-center'>
+          <div className='flex items-center justify-center w-8 h-8'>
             <button>
               <img
                 src={burger}
@@ -26,7 +28,7 @@ const Hero = () => {
             </button>
           </div>
         </nav>
-        <div className='flex relative'>
+        <div className='relative flex'>
           <div>
             <h1 className='font-extrabold text-[#1F3F68] tracking-[2%] md:tracking-[4%] uppercase text-5xl md:text-[64px] w-[238px] md:w-[525px] leading-[62.4px] md:leading-[83.2px] mb-[55px]'>
               HELLO WORLD ! My name is
@@ -41,9 +43,9 @@ const Hero = () => {
               at. Posuere sollicitudin
               odio tellus elit
             </p>
-            <button className='bg-[#5A98D0] text-white w-[220px] h-14 rounded-[10px] mb-[59px] md:mb-[184px]'>
+            <Button>
               See Our Project
-            </button>
+            </Button>
           </div>
           <div className='absolute hidden lg:block -z-10 w-[687px] right-0'>
             <img

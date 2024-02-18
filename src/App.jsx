@@ -1,3 +1,4 @@
+import ContactPage from './components/footer';
 import Form from './components/form';
 import Hero from './components/hero';
 import Mission from './components/mission';
@@ -10,6 +11,7 @@ function App() {
       <Mission />
       <MissionFullScreen />
       <Form />
+      <ContactPage />
     </div>
   );
 }
