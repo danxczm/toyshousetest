@@ -1,4 +1,6 @@
-import burger from '../public/ic_menu_48px.png';
+import { useState } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
+
 import logo from '../public/Group.png';
 import hero from '../public/heropic.png';
 
@@ -6,21 +8,23 @@ import { RxHamburgerMenu } from 'react-icons/rx';
 import { IoMdClose } from 'react-icons/io';
 
 import Button from './button';
-import { useState } from 'react';
 
 let links = [
-    { name: 'home', link: '/home' },
-    { name: 'services', link: '/services' },
-    { name: 'contacts', link: '/contacts' },
+    { name: 'home', link: '#home' },
+    { name: 'services', link: '#services' },
+    { name: 'contacts', link: '#contacts' },
 ];
 
 const Hero = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <section className="pt-10 min-h-[768px] bg-gradient-to-t from-[#98C3E8]/20 via-[#98C3E800] to-[#98C3E800] overflow-hidden">
+        <section
+            id="home"
+            className="min-h-[768px] bg-gradient-to-t from-[#98C3E8]/20 via-[#98C3E800] to-[#98C3E800] overflow-hidden"
+        >
             <header className="fixed top-0 left-0 z-50 w-full">
-                <nav className="flex items-center py-[20px] md:px-10  justify-between bg-white px-[15px]">
+                <nav className="flex items-center py-[20px] md:px-10  justify-between bg-white px-[15px] lg:px-[165px]">
                     <a href="/" className="flex items-center w-12 h-12 cursor-pointer">
                         <img src={logo} alt="logo" loading="lazy" />
                     </a>
@@ -43,22 +47,27 @@ const Hero = () => {
                         }`}
                     >
                         {links.map(({ name, link }) => (
-                            <li key={link} className="text-xl md:ml-8 md:my-0 my-7">
-                                <a
-                                    href={link}
+                            <li
+                                onClick={() => setOpen(false)}
+                                key={link}
+                                className="text-xl md:ml-8 md:my-0 my-7"
+                            >
+                                <Link
+                                    to={link}
                                     className="text-[#1F3F68] duration-500 hover:text-blue-400"
                                 >
                                     {name}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                         <button>
-                            <a
-                                href="/registration"
+                            <Link
+                                onClick={() => setOpen(false)}
+                                to="#registration"
                                 className="capitalize bg-[#1F3F68] text-white py-2 px-4 rounded md:ml-8 hover:bg-blue-400 duration-500"
                             >
                                 registration
-                            </a>
+                            </Link>
                         </button>
                     </ul>
                 </nav>

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    scroll-behavior: smooth;
+}
+
 html {
     font-family: 'SF Pro Display', sans-serif;
 }

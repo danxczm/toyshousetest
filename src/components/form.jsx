@@ -13,7 +13,10 @@ const Form = () => {
     };
 
     return (
-        <section className="flex flex-col sm:p-[45px] md:px-[75px] text-lg text-cyan-900 bg-white rounded-xl shadow-2xl shadow-[#1070B133]/10 sm:mb-[140px] md:mb-[155px] sm:w-[346px] md:w-[689px] mb-[140px] mx-auto">
+        <section
+            id="registration"
+            className="scroll-mt-20 flex flex-col sm:p-[45px] md:px-[75px] text-lg text-cyan-900 bg-white rounded-xl shadow-2xl shadow-[#1070B133]/10 sm:mb-[140px] md:mb-[155px] sm:w-[346px] md:w-[689px] mb-[140px] mx-auto"
+        >
             <h2 className="text-2xl uppercase leading-[28.64px] tracking-widest mx-auto mb-10">
                 Registration
             </h2>

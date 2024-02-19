@@ -4,7 +4,10 @@ import GroupDark from '../public/GroupDark.png';
 
 function Footer() {
     return (
-        <section className="py-12 md:py-[17px] sm:px-[15px] md:px-10 lg:px-[165px] text-white bg-[#316099]">
+        <section
+            id="contacts"
+            className="py-12 md:py-[17px] sm:px-[15px] md:px-10 lg:px-[165px] text-white bg-[#316099]"
+        >
             <div className="md:flex md:gap-10 lg:justify-start lg:gap-24">
                 <div className="mb-[53px] w-[300px]">
                     <img

@@ -1,23 +1,24 @@
-import Background from './components/background';
+import { BrowserRouter } from 'react-router-dom';
+
 import Footer from './components/footer';
 import Form from './components/form';
 import Hero from './components/hero';
 import Interest from './components/interest';
 import Mission from './components/mission';
-import MissionFullScreen from './components/missionFullScreen';
+// import MissionFullScreen from './components/missionFullScreen';
 
 function App() {
     return (
-        <div>
-            <Hero />
-            <Background>
+        <BrowserRouter>
+            <div>
+                <Hero />
                 <Mission />
-                <MissionFullScreen />
+                {/* <MissionFullScreen /> */}
                 <Form />
-            </Background>
-            <Interest />
-            <Footer />
-        </div>
+                <Interest />
+                <Footer />
+            </div>
+        </BrowserRouter>
     );
 }
 

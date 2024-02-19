@@ -2,11 +2,13 @@ import technology from '../public/technology.png';
 import arrow from '../public/arrow.png';
 import business from '../public/business.png';
 import product from '../public/product.png';
-import Background from './background';
 
 const MissionFullScreen = () => {
     return (
-        <section className="w-[920px] h-[1166px] mt-[176px] mb-[142px] mx-auto lg:flex hidden">
+        <section
+            id="services"
+            className="w-[920px] h-[1166px] mt-[176px] mb-[142px] mx-auto lg:flex hidden"
+        >
             <ul>
                 <li>
                     <h1 className="text-5xl font-bold	leading-[50.4px] tracking-[5%] text-[#316099] w-[457px] mb-[76px]">
