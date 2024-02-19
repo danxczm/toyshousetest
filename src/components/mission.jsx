@@ -5,7 +5,11 @@ import product from '../public/product.png';
 
 const Mission = () => {
     return (
-        <section id="services" className="scroll-mt-28">
+        <section id="services" className="relative scroll-mt-28">
+            <div className="absolute m-auto left-0 right-0 bg-green-400 rounded-full top-[150px] lg:top-[0px] blur-xl opacity-50 -z-50 lg:w-96 lg:h-96 sm:w-[350px] sm:h-[350px] md:w-[450px] md:h-[450px] mix-blend-screen"></div>
+            <div className="absolute left-0 right-0 m-auto bg-blue-400 rounded-full top-[750px] lg:top-[200px] lg:-left-[400px] blur-xl opacity-40 -z-50 lg:w-96 lg:h-96 sm:w-[350px] sm:h-[350px] md:w-[450px] md:h-[450px]  mix-blend-screen "></div>
+            <div className="absolute left-0 right-0 m-auto bg-rose-400 rounded-full top-[1350px] lg:top-[500px] blur-xl opacity-40 -z-50 sm:w-[350px] sm:h-[350px] md:w-[450px] md:h-[450px] lg:w-[550px] lg:h-[550px] mix-blend-screen "></div>
+
             <div className="px-[15px] w-min md:w-[457px] mt-[77px] md:mt-[106px] mx-auto lg:hidden">
                 <h1 className="text-4xl font-bold	leading-[50.4px] tracking-[5%] text-[#316099] mb-[76px]">
                     What we do to help our client grow in digital era?
