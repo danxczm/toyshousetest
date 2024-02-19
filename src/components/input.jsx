@@ -53,7 +53,7 @@ const Input = ({ type, placeholder, text = false, pattern = null, last = false, 
             </div>
             <input
                 type={type}
-                className={`w-[255px] h-[40px] py-[7px] pl-4 font-light bg-[#EAF3FA] rounded-md placeholder:text-[#5A768C] placeholder:tracking-widest hover:shadow-[0_2px_16px_0_rgba(163,201,245,1)] focus:bg-[#FBFDFE] focus:shadow-[0_2px_16px_0_rgba(163,201,245,1)] focus:text-[#333333] ${
+                className={`w-[255px] h-[40px] py-[7px] pl-4 font-light bg-[#EAF3FA] rounded-md placeholder:text-[#5A768C] placeholder:tracking-widest hover:shadow-[0_2px_16px_0_rgba(163,201,245,1)] focus:bg-[#FBFDFE] focus:shadow-[0_2px_16px_0_rgba(163,201,245,1)] focus:text-[#333333] transition-all duration-300 ease-in ${
                     redBorder ? 'shadow-[0_2px_16px_0_rgba(245,138,138,1)]' : ''
                 }`}
                 placeholder={placeholder}

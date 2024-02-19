@@ -1,125 +1,136 @@
 import React from 'react';
-import Button from './button';
 
-const ContactButton = () => (
-  <div className='justify-center px-14 py-5 mt-16 font-medium tracking-widest text-center text-white bg-blue-400 rounded-xl leading-[108%]'>
-    Let’s Talk
-  </div>
-);
+import GroupDark from '../public/GroupDark.png';
 
-const InfoItem = ({
-  label,
-  content,
-}) => (
-  <div className='flex justify-between gap-5 mt-7'>
-    <div className='text-base italic font-extrabold leading-7 tracking-wider'>
-      {label}.
-    </div>
-    <div className='text-lg font-light leading-7 tracking-widest grow'>
-      {content}
-    </div>
-  </div>
-);
+function Footer() {
+    return (
+        <section className="py-12 md:py-[17px] sm:px-[15px] md:px-10 lg:px-[165px] text-white bg-[#316099]">
+            <div className="md:flex md:gap-10 lg:justify-start lg:gap-24">
+                <div className="mb-[53px] w-[300px]">
+                    <img
+                        loading="lazy"
+                        src={GroupDark}
+                        className="w-12 h-12 mb-8"
+                        alt="GroupDark"
+                    />
+                    <ul>
+                        <li className="flex gap-5 mb-6">
+                            <p className="text-base italic font-extrabold leading-7 tracking-wider">
+                                A.
+                            </p>
+                            <p className="text-lg font-light leading-7 tracking-widest">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </li>
 
-const NavLink = ({ children }) => (
-  <div className='text-lg font-light leading-7 tracking-widest mt-7'>
-    {children}
-  </div>
-);
+                        <li className="flex gap-5 mb-6">
+                            <p className="text-base italic font-extrabold leading-7 tracking-wider">
+                                T.
+                            </p>
+                            <a
+                                href="tel:+380912345678"
+                                className="text-lg font-light leading-7 tracking-widest"
+                            >
+                                +38 091 234 56 78
+                            </a>
+                        </li>
 
-function ContactPage() {
-  const infoItems = [
-    {
-      label: 'A',
-      content:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    },
-    {
-      label: 'T',
-      content: '+38 091 234 56 78',
-    },
-    {
-      label: 'E',
-      content: 'hello.ira@gmail.com',
-    },
-  ];
+                        <li className="flex gap-5">
+                            <p className="text-base italic font-extrabold leading-7 tracking-wider">
+                                E.
+                            </p>
+                            <a
+                                href="mailto:hello.ira@gmail.com"
+                                className="text-lg font-light leading-7 tracking-widest"
+                            >
+                                hello.ira@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-  const navLinks = [
-    'About',
-    'What We Do',
-    'Project',
-    'How It Work With Us',
-  ];
+                <div className="mb-[52px]">
+                    <p className="mb-8 text-2xl italic font-semibold tracking-wider">About US</p>
+                    <ul>
+                        <li className="mb-[15px]">
+                            <a
+                                className="text-lg font-light leading-7 tracking-widest mt-7"
+                                href="#about"
+                            >
+                                About
+                            </a>
+                        </li>
+                        <li className="mb-[15px]">
+                            <a
+                                className="text-lg font-light leading-7 tracking-widest mt-7"
+                                href="#work"
+                            >
+                                What We Do
+                            </a>
+                        </li>
+                        <li className="mb-[15px]">
+                            <a
+                                className="text-lg font-light leading-7 tracking-widest mt-7"
+                                href="#project"
+                            >
+                                Project
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className="text-lg font-light leading-7 tracking-widest mt-7"
+                                href="#results"
+                            >
+                                How It Work With Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-  const socialLinks = [
-    'Instagram',
-    'Facebook',
-    'LinkedIn',
-    'Youtube',
-  ];
+                <div className="mb-11">
+                    <p className="mb-8 text-2xl italic font-semibold tracking-wider">Follow</p>
+                    <ul>
+                        <li className="mb-[15px]">
+                            <a
+                                className="text-lg font-light leading-7 tracking-widest mt-7"
+                                href=""
+                            >
+                                Instagram
+                            </a>
+                        </li>
+                        <li className="mb-[15px]">
+                            <a
+                                className="text-lg font-light leading-7 tracking-widest mt-7"
+                                href=""
+                            >
+                                Facebook
+                            </a>
+                        </li>
+                        <li className="mb-[15px]">
+                            <a
+                                className="text-lg font-light leading-7 tracking-widest mt-7"
+                                href=""
+                            >
+                                LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                className="text-lg font-light leading-7 tracking-widest mt-7"
+                                href=""
+                            >
+                                Youtube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-  return (
-    <section className='flex flex-col py-11 mx-auto sm:px-[15px] w-full text-white bg-[#316099] rounded-tr-[200px]'>
-      <div className='flex flex-col w-full mt-12 text-2xl'>
-        <h2 className='mx-auto text-4xl font-bold leading-10 tracking-widest'>
-          Interested to work with our
-          team?
-        </h2>
-        <p className='text-2xl leading-10 tracking-widest mt-14 md:w-[460px] opacity-60'>
-          Lorem ipsum dolor sit amet,
-          consectetur adipisicing elit,
-          sed do eiusmod tempor
-          incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim
-          veniam.
-        </p>
-        <Button>Let’s Talk</Button>
-      </div>
-      {/* <section className='flex flex-col w-full pl-4 pr-20 mt-14'>
-        <img
-          loading='lazy'
-          src='https://cdn.builder.io/api/v1/image/assets/TEMP/b112b44384fe17a6c0c15a1929bf549cd357b1fe5e0ab0e9ffd0f8bba67260c8?apiKey=f507e8cf8a6d4598a5b206e56f2791a4&'
-          className='mt-14 w-full stroke-[1px] stroke-white'
-          alt=''
-        />
-        {infoItems.map(
-          (item, index) => (
-            <InfoItem
-              key={index}
-              label={item.label}
-              content={item.content}
-            />
-          )
-        )}
-
-        <section className='mt-16 text-2xl italic font-semibold tracking-wider'>
-          About US
-          {navLinks.map(
-            (link, index) => (
-              <NavLink key={index}>
-                {link}
-              </NavLink>
-            )
-          )}
+            <footer className="text-base leading-7 tracking-wider opacity-40">
+                2019 © All rights reserved.
+            </footer>
         </section>
-
-        <section className='mt-16 text-2xl italic font-semibold tracking-wider'>
-          Follow
-          {socialLinks.map(
-            (link, index) => (
-              <NavLink key={index}>
-                {link}
-              </NavLink>
-            )
-          )}
-        </section>
-      </section>
-
-      <footer className='text-base leading-7 tracking-wider mt-14'>
-        2019 © All rights reserved.
-      </footer> */}
-    </section>
-  );
+    );
 }
 
-export default ContactPage;
+export default Footer;

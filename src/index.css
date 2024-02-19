@@ -12,3 +12,12 @@ select:focus,
 a:focus {
     outline: none;
 }
+
+@font-face {
+    font-family: TT;
+    src: url(../src/font/TT\ Travels\ Trial\ Regular.otf);
+}
+
+html footer {
+    font-family: TT;
+}

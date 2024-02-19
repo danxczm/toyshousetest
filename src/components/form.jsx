@@ -1,4 +1,7 @@
 import { useState } from 'react';
+
+import check from '../public/check.png';
+
 import Button from './button';
 import Input from './input';
 
@@ -10,7 +13,7 @@ const Form = () => {
     };
 
     return (
-        <section className="flex flex-col sm:p-[45px] md:px-[75px] mx-auto text-lg text-cyan-900 bg-white rounded-xl shadow-2xl shadow-[#1070B133]/10 sm:mb-[140px] md:mb-[155px] sm:w-[346px] md:w-[689px] mb-[140px] md:mx-auto">
+        <section className="flex flex-col sm:p-[45px] md:px-[75px] text-lg text-cyan-900 bg-white rounded-xl shadow-2xl shadow-[#1070B133]/10 sm:mb-[140px] md:mb-[155px] sm:w-[346px] md:w-[689px] mb-[140px] mx-auto">
             <h2 className="text-2xl uppercase leading-[28.64px] tracking-widest mx-auto mb-10">
                 Registration
             </h2>
@@ -56,10 +59,7 @@ const Form = () => {
                             onChange={handleCheckboxChange}
                         />
                         <span className="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
-                            <img
-                                src="https://cdn.builder.io/api/v1/image/assets/TEMP/287b0cb2954d496819ccb729df495ea8432071871856a1e987daf32d24ef8238?apiKey=f507e8cf8a6d4598a5b206e56f2791a4&"
-                                alt="pic"
-                            />
+                            <img src={check} alt="check" />
                         </span>
                     </label>
                 </div>
